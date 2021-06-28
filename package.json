@@ -5,13 +5,18 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "rollup -c -w",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
+    "@types/jasmine": "^3.7.7",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-jasmine-html-reporter": "^1.6.0",
+    "karma-typescript": "^5.5.1",
     "rollup": "^2.52.3",
     "rollup-plugin-generate-html-template": "^1.7.0",
     "rollup-plugin-serve": "^1.1.0",
