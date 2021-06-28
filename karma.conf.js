@@ -5,8 +5,6 @@ module.exports = function (config) {
             "src/**/*.ts"
         ], 
         client: {
-            jasmine: {
-            },
             clearContext: false // leave Jasmine Spec Runner output visible in browser
           },
         preprocessors: {
