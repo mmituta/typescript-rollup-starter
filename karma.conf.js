@@ -1,13 +1,18 @@
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
         frameworks: ["jasmine", "karma-typescript"],
         files: [
-            "src/**/*.ts" // *.tsx for React Jsx
-        ],
+            "src/**/*.ts"
+        ], 
+        client: {
+            jasmine: {
+            },
+            clearContext: false // leave Jasmine Spec Runner output visible in browser
+          },
         preprocessors: {
-            "**/*.ts": "karma-typescript" // *.tsx for React Jsx
+            "**/*.ts": "karma-typescript"
         },
-        reporters: ["progress", "karma-typescript", "kjhtml"],
+        reporters: ['progress', 'kjhtml'],
         browsers: ["Chrome"]
     });
 };
