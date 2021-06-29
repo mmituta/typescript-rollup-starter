@@ -2,6 +2,8 @@ import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 import htmlTemplate from 'rollup-plugin-generate-html-template';
 import serve from 'rollup-plugin-serve'
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+
 
 const production = !process.env.ROLLUP_WATCH;
 export default {
@@ -15,7 +17,7 @@ export default {
                 target: 'dist/index.html',
             })]
         }],
-    plugins: [typescript(), !production &&  serve({
+    plugins: [typescript(), nodeResolve(),  !production &&  serve({
         contentBase: ['dist'],
         open: true,
         host: 'localhost',
