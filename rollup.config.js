@@ -4,6 +4,7 @@ import htmlTemplate from 'rollup-plugin-generate-html-template';
 import serve from 'rollup-plugin-serve'
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
+import livereload from 'rollup-plugin-livereload'
 
 const production = !process.env.ROLLUP_WATCH;
 export default {
@@ -22,5 +23,5 @@ export default {
         open: true,
         host: 'localhost',
         port: 10000
-      })]
+      }), livereload()]
 };

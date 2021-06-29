@@ -25,6 +25,7 @@
     "karma-typescript-es6-transform": "^5.5.1",
     "rollup": "^2.52.3",
     "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-watch": "^4.3.1",
