@@ -2,6 +2,7 @@
     "compilerOptions": {
         "target": "ES6",
         "outDir": "dist",
-        "rootDir": "src"
+        "rootDir": "src",
+        "moduleResolution": "node"
     }
 }
